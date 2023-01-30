@@ -7,9 +7,10 @@ Future getCurrencyResponse() async {
   Response res = await get(Uri.parse(ApiUtils.BASE_URL + ApiUtils.to + ApiUtils.toCurrency + ApiUtils.from + ApiUtils.fromCurrency + ApiUtils.amount + ApiUtils.totalAmount + ApiUtils.apiKey));
   if(res.statusCode == 200) {
     var data = jsonDecode(res.body);
-    return data;
     print(data);
+    return data;
   } else {
+    print(res.body);
     throw "No Data Found !";
   }
 }

@@ -1,11 +1,21 @@
 import 'package:currency_convertor_app/screen/home_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(
-    const MaterialApp(
+    MaterialApp(
+      theme: ThemeData(
+        appBarTheme: AppBarTheme(
+          titleTextStyle: GoogleFonts.poppins(),
+        ),
+        textTheme: TextTheme(
+          bodyText2: GoogleFonts.poppins(),
+        ),
+      ),
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: const HomeScreen(),
     ),
   );
 }

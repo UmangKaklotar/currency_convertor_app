@@ -3,8 +3,8 @@ class ApiUtils {
   static String to = "to=";
   static String toCurrency = "INR";
   static String from = "&from=";
-  static String fromCurrency = "USD";
+  static String fromCurrency = "INR";
   static String amount = "&amount=";
-  static String totalAmount = "500";
-  static String apiKey = "&apikey=7Bu4Ap7666jIFu1gCkLZtqhiqwa1pe1A";
+  static String totalAmount = "0.01";
+  static String apiKey = "&apikey=DkqRyb2A0AxBJskpYgnWy8JmfF4OuGvZ";
 }
